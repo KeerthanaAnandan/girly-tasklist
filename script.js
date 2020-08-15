@@ -45,7 +45,7 @@ function  addTask(e){
     if (taskEnteringArea.value===''){
         alert('enter something bae');
         
-    }  
+    }  else{
 
 let lis = document.createElement('li')
     lis.className='collection-item';
@@ -75,7 +75,7 @@ function storeTaskInLocalStorage(singleTask){
     manyTask.push(singleTask);
     localStorage.setItem('manyTask' , JSON.stringify(manyTask));
 
-}
+}}
 
 function clrTask(e){
     if(confirm('Are you sure babe?')){
